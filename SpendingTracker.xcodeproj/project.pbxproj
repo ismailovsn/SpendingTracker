@@ -13,6 +13,7 @@
 		25DAB4542A695F3500D9E28B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DAB4532A695F3500D9E28B /* Preview Assets.xcassets */; };
 		25DAB4562A695F3500D9E28B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4552A695F3500D9E28B /* Persistence.swift */; };
 		25DAB4592A695F3500D9E28B /* SpendingTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4572A695F3500D9E28B /* SpendingTracker.xcdatamodeld */; };
+		25DAB4642A696A2E00D9E28B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4632A696A2E00D9E28B /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		25DAB4532A695F3500D9E28B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25DAB4552A695F3500D9E28B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		25DAB4582A695F3500D9E28B /* SpendingTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendingTracker.xcdatamodel; sourceTree = "<group>"; };
+		25DAB4632A696A2E00D9E28B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		25DAB44B2A695F3400D9E28B /* SpendingTracker */ = {
 			isa = PBXGroup;
 			children = (
+				25DAB4622A696A2600D9E28B /* Main */,
 				25DAB44C2A695F3400D9E28B /* SpendingTrackerApp.swift */,
 				25DAB44E2A695F3400D9E28B /* ContentView.swift */,
 				25DAB4502A695F3500D9E28B /* Assets.xcassets */,
@@ -71,6 +74,14 @@
 				25DAB4532A695F3500D9E28B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25DAB4622A696A2600D9E28B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25DAB4632A696A2E00D9E28B /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 				25DAB4592A695F3500D9E28B /* SpendingTracker.xcdatamodeld in Sources */,
 				25DAB4562A695F3500D9E28B /* Persistence.swift in Sources */,
 				25DAB44F2A695F3400D9E28B /* ContentView.swift in Sources */,
+				25DAB4642A696A2E00D9E28B /* MainView.swift in Sources */,
 				25DAB44D2A695F3400D9E28B /* SpendingTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
