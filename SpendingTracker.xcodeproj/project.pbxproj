@@ -14,6 +14,7 @@
 		25DAB4562A695F3500D9E28B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4552A695F3500D9E28B /* Persistence.swift */; };
 		25DAB4592A695F3500D9E28B /* SpendingTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4572A695F3500D9E28B /* SpendingTracker.xcdatamodeld */; };
 		25DAB4642A696A2E00D9E28B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4632A696A2E00D9E28B /* MainView.swift */; };
+		25DAB4672A722B0B00D9E28B /* AddCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB4662A722B0B00D9E28B /* AddCardForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		25DAB4552A695F3500D9E28B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		25DAB4582A695F3500D9E28B /* SpendingTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendingTracker.xcdatamodel; sourceTree = "<group>"; };
 		25DAB4632A696A2E00D9E28B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		25DAB4662A722B0B00D9E28B /* AddCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,18 @@
 		25DAB4622A696A2600D9E28B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				25DAB4652A722AEF00D9E28B /* AddCard */,
 				25DAB4632A696A2E00D9E28B /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		25DAB4652A722AEF00D9E28B /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				25DAB4662A722B0B00D9E28B /* AddCardForm.swift */,
+			);
+			path = AddCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25DAB4592A695F3500D9E28B /* SpendingTracker.xcdatamodeld in Sources */,
+				25DAB4672A722B0B00D9E28B /* AddCardForm.swift in Sources */,
 				25DAB4562A695F3500D9E28B /* Persistence.swift in Sources */,
 				25DAB44F2A695F3400D9E28B /* ContentView.swift in Sources */,
 				25DAB4642A696A2E00D9E28B /* MainView.swift in Sources */,
