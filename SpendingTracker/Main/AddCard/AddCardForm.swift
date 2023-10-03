@@ -35,9 +35,12 @@ struct AddCardForm: View {
                         .keyboardType(.numberPad)
                     
                     Picker("Type", selection: $cardType) {
-                        ForEach(["Visa", "Mastercard", "Discover"], id: \.self) { cardType in
-                            Text(String(cardType)).tag(String(cardType))
-                        }
+//                        ForEach(["Visa", "Mastercard", "Discover"], id: \.self) { cardType in
+//                            Text(String(cardType)).tag(String(cardType))
+//                        }
+                        Text("Visa").tag("Visa")
+                        Text("MasterCard").tag("MasterCard")
+                        Text("Discover").tag("Discover")
                     }
                 }
                 
