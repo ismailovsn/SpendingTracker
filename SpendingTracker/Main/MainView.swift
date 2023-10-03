@@ -46,7 +46,10 @@ struct MainView: View {
             .navigationTitle("Credit Cards")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    addItemButton
+                    HStack {
+                        addItemButton
+                        deleteAllButton
+                    }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     addCardButton
@@ -126,7 +129,24 @@ struct MainView: View {
         } label: {
             Text("Add Item")
         }
-
+    }
+    
+    var deleteAllButton: some View {
+        Button {
+            cards.forEach { card in
+                viewContext.delete(card)
+            }
+            
+            do {
+                try viewContext.save()
+            }
+            catch {
+                
+            }
+            
+        } label: {
+            Text("Delete All")
+        }
     }
 }
 
