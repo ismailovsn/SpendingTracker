@@ -36,6 +36,8 @@ struct MainView: View {
     //                .onAppear {
     //                    shouldPresentAddCardForm.toggle()
     //                }
+                } else {
+                    emptyPromptMessage
                 }
                 
                 Spacer()
@@ -56,6 +58,23 @@ struct MainView: View {
                 }
             }
         }
+    }
+    
+    private var emptyPromptMessage: some View {
+        VStack {
+            Text("You currently have no cards in the system.")
+                .padding(.vertical)
+                .multilineTextAlignment(.center)
+            Button {
+                shouldPresentAddCardForm.toggle()
+            } label: {
+                Text("+ Add your first card")
+                    .foregroundColor(Color(.systemBackground))
+            }
+            .padding()
+            .background(Color(.label))
+            .cornerRadius(5)
+        }.font(.system(size: 24, weight: .semibold))
     }
     
     struct CreditCardView: View {
@@ -146,11 +165,11 @@ struct MainView: View {
             shouldPresentAddCardForm.toggle()
         } label: {
             Text("+ Card")
-                .foregroundColor(.white)
+                .foregroundColor(Color(.systemBackground))
                 .font(.system(size: 16, weight: .bold))
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
-                .background(Color.black)
+                .background(Color(.label))
                 .cornerRadius(5)
         }
     }
